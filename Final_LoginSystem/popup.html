@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Login Assistant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    h3 {
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+    button {
+      display: block;
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin: 5px auto;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #status {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+    #seedInput, #emailInput {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin: 10px auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    #emailInputContainer {
+      display: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Secure Login Assistant</h3>
+  <button id="generatePassword">Generate Password</button>
+  <div id="generatedPassword"></div>
+<div id="passwordStrength"></div>
+
+
+<script src="popup.js">
+  
+</script>
+
+  
+  <button id="rememberPassword">Remember Password Set Date</button>
+  
+  <button id="setup2FA">Setup Two-Factor Authentication</button>
+  <div id="emailInputContainer">
+    <input id="emailInput" type="email" placeholder="Enter your email for 2FA">
+    <button id="submitEmail">Submit Email</button>
+  </div>
+
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
